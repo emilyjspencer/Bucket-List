@@ -3,18 +3,15 @@ import React from 'react';
 import './BucketList.css';
 
 
-const BucketList = () => {
+const BucketList = (props) => {
+
     return (
-        <div>
-            <h1 className="bucket-list">Bucket List</h1>
-            <ul className="items">
-              <li>Karen Blixen Museum, Kenya</li>
-              <li>NYC</li>
-              <li>Bali</li>
-              <li>Northern Lights</li>
+            <ul className="bucket-list">
+                {props.items.map(item => {
+                    return <li>{item.text}</li>;
+                })} 
             </ul>
-        </div>
-    )
-}
+    );
+};
 
 export default BucketList

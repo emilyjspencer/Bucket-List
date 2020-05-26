@@ -13,3 +13,15 @@
     border: 1px solid #ccc;
     padding: 1rem;
   }
+
+  .bucket-list {
+    list-style: none;
+    margin: 10rem;
+    padding: 0;
+  }
+  
+  .bucket-list li  {
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    padding: 1rem;
+  }
