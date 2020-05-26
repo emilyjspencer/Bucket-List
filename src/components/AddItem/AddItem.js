@@ -11,10 +11,6 @@ const AddItem = (props) => {
             id: Math.random().toString(),
             text: userInput
           };
-
-          console.log(userInput);
-
-          console.log(newItem);
           props.onAddItem(newItem);
     };
 
@@ -24,7 +20,7 @@ const AddItem = (props) => {
 
   return (
     <form className="new-item" onSubmit={addItemHandler}>
-      <input type="text" onChange={textChangeHandler} />
+      <input id="enter" type="text" onChange={textChangeHandler} />
       <button type="Submit">Add Item</button>
     </form>
   )

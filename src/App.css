@@ -54,3 +54,13 @@
   border: 1px solid #ccc;
   padding: 1rem;
 }
+
+p {
+  font-size: 40px;
+  text-align: center;
+ 
+}
+
+body {
+  background-image: linear-gradient(rgb(223, 217, 217), rgb(243, 243, 210));
+}
