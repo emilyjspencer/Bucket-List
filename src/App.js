@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import BucketList from './components/BucketList/BucketList';
@@ -6,16 +6,15 @@ import AddItem from './components/AddItem/AddItem';
 
 const App = () =>  {
 
-  const bucketListItems = [
+  const [bucketListItems, setBucketListItems] = useState([
     {id: 'i1', text: 'Karen Blixen Museum, Kenya'},
     {id: 'i1', text: 'NYC'},
     {id: 'i3', text: 'Bali'},
     {id: 'i4', text: 'Northern Lights'}
-  ];
+  ]);
 
 const addNewItemHandler = (newItem) => {
-  bucketListItems.push(newItem);
-  console.log(bucketListItems);
+  setBucketListItems(bucketListItems.concat(newItem));
 };
 
   return (
