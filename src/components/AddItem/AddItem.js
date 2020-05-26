@@ -1,7 +1,7 @@
 import React from 'react';
 import './AddItem.css';
 
-const AddItem = () => {
+const AddItem = (props) => {
 
     const addItemHandler = (event) => {
         event.preventDefault();
@@ -10,6 +10,7 @@ const AddItem = () => {
             text: 'Random Item'
           };
           console.log(newItem);
+          props.onAddItem(newItem);
     };
 
 

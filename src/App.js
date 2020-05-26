@@ -13,12 +13,15 @@ const App = () =>  {
     {id: 'i4', text: 'Northern Lights'}
   ];
 
-
+const addNewItemHandler = (newItem) => {
+  bucketListItems.push(newItem);
+  console.log(bucketListItems);
+};
 
   return (
     <div className="bucket-list">
       <h2>Bucket List</h2>
-      <AddItem />
+      <AddItem onAddItem={addNewItemHandler} />
       <BucketList items={bucketListItems} />
     </div>
   );
