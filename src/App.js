@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import BucketList from './components/BucketList';
+import BucketList from './components/BucketList/BucketList';
+import AddItem from './components/AddItem/AddItem';
 
 const App = () =>  {
 
@@ -16,6 +17,7 @@ const App = () =>  {
   return (
     <div className="bucket-list">
       <h2>Bucket List</h2>
+      <AddItem />
       <BucketList items={bucketListItems} />
     </div>
   );
