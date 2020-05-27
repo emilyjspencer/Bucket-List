@@ -4,7 +4,7 @@ import './App.css';
 import BucketList from './components/BucketList/BucketList';
 import AddItem from './components/AddItem/AddItem';
 import Header from './components/Header/Header';
-import DeleteItem from './components/DeleteItem/DeleteItem';
+import DeleteItems from './components/DeleteItems/DeleteItems';
 
 const App = () =>  {
 
@@ -25,7 +25,7 @@ const removeItemsHandler = (itemAdded) => {
       <Header />
       <p><strong>My Bucket List</strong></p>
       <AddItem onAddItem={addNewItemHandler} />
-      <DeleteItem onDeleteItem={removeItemsHandler} />
+      <DeleteItems onDeleteItem={removeItemsHandler} />
       <BucketList items={bucketListItems} />
     </div>
   );
