@@ -4,6 +4,7 @@ import './App.css';
 import BucketList from './components/BucketList/BucketList';
 import AddItem from './components/AddItem/AddItem';
 import Header from './components/Header/Header';
+import DeleteItem from './components/DeleteItem/DeleteItem';
 
 const App = () =>  {
 
@@ -15,11 +16,16 @@ const addNewItemHandler = (newItem) => {
   setBucketListItems(bucketListItems.concat(newItem));
 };
 
+const removeItemsHandler = (itemAdded) => {
+  setBucketListItems(bucketListItems.filter(itemAdded => itemAdded !== itemAdded))
+};
+
   return (
     <div className="bucket-list">
       <Header />
       <p><strong>My Bucket List</strong></p>
       <AddItem onAddItem={addNewItemHandler} />
+      <DeleteItem onDeleteItem={removeItemsHandler} />
       <BucketList items={bucketListItems} />
     </div>
   );
