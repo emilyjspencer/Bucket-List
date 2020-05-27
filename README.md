@@ -12,7 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ```html
 npm start
 ```
-* Go to the following address in the browser: localhost:3000
+* The application will automatically open in the browser at http://localhost:3000/
 
 
 ## Built with
