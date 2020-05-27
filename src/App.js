@@ -8,10 +8,7 @@ import Header from './components/Header/Header';
 const App = () =>  {
 
   const [bucketListItems, setBucketListItems] = useState([
-    {id: 'i1', text: 'Karen Blixen Museum, Kenya'},
-    {id: 'i1', text: 'NYC'},
-    {id: 'i3', text: 'Bali'},
-    {id: 'i4', text: 'Northern Lights'}
+   
   ]);
 
 const addNewItemHandler = (newItem) => {
